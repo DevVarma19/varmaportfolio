@@ -103,7 +103,7 @@ export const projects = [
     links: {
       github: null,
       demo: null,
-      publication: "#"
+      publication: "https://www.mdpi.com/2079-9292/15/1/152"
     }
   },
   {
