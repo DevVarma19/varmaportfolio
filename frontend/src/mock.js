@@ -7,8 +7,8 @@ export const personalInfo = {
   headline: "Data Engineer specializing in cloud-native architectures, ETL optimization, and ML/AI systems. Reduced query latency by 30% across 1,000+ tables at Amazon.",
   email: "mandapati@usf.edu",
   phone: "(470) 452-5472",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourprofile",
+  linkedin: "https://www.linkedin.com/in/varmamvss",
+  github: "https://github.com/DevVarma19",
   website: "https://yourwebsite.com",
   resumeUrl: "/resume.pdf"
 };
