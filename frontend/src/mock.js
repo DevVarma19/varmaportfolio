@@ -120,7 +120,7 @@ export const projects = [
     techStack: ["React", "FastAPI", "LlamaIndex", "OpenAI API", "Pinecone", "Python"],
     featured: true,
     links: {
-      github: "https://github.com/yourprofile/docbot",
+      github: "https://github.com/DevVarma19/docbot",
       demo: null
     }
   }
