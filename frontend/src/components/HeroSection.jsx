@@ -12,35 +12,38 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white px-6 pt-20">
-      <div className="max-w-4xl mx-auto text-center">
-        {/* Main Content */}
+    <section className="min-h-screen flex items-center justify-center bg-slate-950 grid-background px-6 pt-20 relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -top-48 -left-48 animate-pulse"></div>
+        <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse" style={{ animationDelay: '1s' }}></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="space-y-6">
           <div className="inline-block">
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
-              <span className="w-2 h-2 bg-blue-600 rounded-full mr-2 animate-pulse"></span>
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-400 text-sm font-medium backdrop-blur-sm">
+              <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse"></span>
               Available for Full-Time Opportunities
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             {personalInfo.name}
           </h1>
 
-          <p className="text-xl md:text-2xl text-slate-600 font-medium">
+          <p className="text-xl md:text-2xl gradient-text font-semibold">
             {personalInfo.tagline}
           </p>
 
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
             {personalInfo.headline}
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
             <Button
               onClick={() => scrollToSection('projects')}
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-base group"
+              className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-6 text-base border-0 glow-on-hover group"
             >
               View Projects
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -49,20 +52,19 @@ const HeroSection = () => {
               onClick={() => window.open(personalInfo.resumeUrl, '_blank')}
               size="lg"
               variant="outline"
-              className="border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-6 text-base"
+              className="border-slate-700 bg-slate-800/50 text-slate-200 hover:bg-slate-800 hover:border-cyan-500 px-8 py-6 text-base backdrop-blur-sm"
             >
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
           </div>
 
-          {/* Social Links */}
           <div className="flex items-center justify-center gap-4 pt-8">
             <a
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-blue-600 transition-all"
+              className="p-3 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-cyan-500 hover:text-cyan-400 transition-all backdrop-blur-sm glow-on-hover"
             >
               <Github size={20} />
             </a>
@@ -70,23 +72,22 @@ const HeroSection = () => {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-blue-600 transition-all"
+              className="p-3 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-cyan-500 hover:text-cyan-400 transition-all backdrop-blur-sm glow-on-hover"
             >
               <Linkedin size={20} />
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="p-3 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-blue-600 transition-all"
+              className="p-3 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-300 hover:bg-slate-800 hover:border-cyan-500 hover:text-cyan-400 transition-all backdrop-blur-sm glow-on-hover"
             >
               <Mail size={20} />
             </a>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-slate-300 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-3 bg-slate-400 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-cyan-500/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-3 bg-cyan-400 rounded-full"></div>
           </div>
         </div>
       </div>
