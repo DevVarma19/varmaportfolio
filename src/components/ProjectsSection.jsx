@@ -97,9 +97,14 @@ const ProjectsSection = () => {
                       <div className="flex items-start gap-2">
                         <FileText className="h-4 w-4 text-cyan-400 flex-shrink-0 mt-0.5" />
                         <div className="space-y-1">
-                          <p className="text-sm font-semibold text-white">
+                          <a
+                            href={project.links.publication}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-semibold text-white hover:text-cyan-400 transition-colors duration-200 block"
+                          >
                             {project.publication.title}
-                          </p>
+                          </a>
                           <p className="text-xs text-slate-400">
                             {project.publication.venue} • {project.publication.date}
                           </p>

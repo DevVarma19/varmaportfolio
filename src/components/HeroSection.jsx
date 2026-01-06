@@ -23,7 +23,7 @@ const HeroSection = () => {
           <div className="inline-block">
             <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-400 text-sm font-medium backdrop-blur-sm">
               <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse"></span>
-              Available for Full-Time Opportunities
+              Looking for Full-Time Opportunities
             </span>
           </div>
 

@@ -27,6 +27,7 @@ const Header = () => {
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'events', label: 'Events' },
     { id: 'contact', label: 'Contact' }
   ];
 

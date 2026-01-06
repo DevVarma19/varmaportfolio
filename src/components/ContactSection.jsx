@@ -40,7 +40,7 @@ const ContactSection = () => {
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mx-auto"></div>
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
-            I'm currently open to full-time Data Engineer opportunities. Feel free to reach out!
+            I'm currently open to full-time Data&AI Engineer opportunities. Feel free to reach out!
           </p>
         </div>
 

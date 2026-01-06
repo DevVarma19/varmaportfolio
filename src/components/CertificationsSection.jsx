@@ -33,9 +33,14 @@ const CertificationsSection = () => {
                     {getIcon(cert.icon)}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-white mb-1">
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-bold text-white mb-1 hover:text-cyan-400 transition-colors duration-200 inline-block"
+                    >
                       {cert.name}
-                    </h3>
+                    </a>
                     <p className="text-sm text-slate-400 mb-1">{cert.issuer}</p>
                     <p className="text-xs text-slate-500">{cert.date}</p>
                   </div>
