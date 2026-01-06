@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/varmaportfolio/static/css/main.8aca0240.css",
+    "main.js": "/varmaportfolio/static/js/main.1d1ec71d.js",
+    "index.html": "/varmaportfolio/index.html",
+    "main.8aca0240.css.map": "/varmaportfolio/static/css/main.8aca0240.css.map",
+    "main.1d1ec71d.js.map": "/varmaportfolio/static/js/main.1d1ec71d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aca0240.css",
+    "static/js/main.1d1ec71d.js"
+  ]
+}
