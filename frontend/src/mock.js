@@ -84,24 +84,6 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    name: "Amazon Data Mesh Automation",
-    category: "Cloud Infrastructure",
-    problem: "Manual metadata management and table migrations created bottlenecks for 1,000+ tables across Amazon's data mesh, impacting query performance and team productivity.",
-    solution: "Automated end-to-end pipeline using AWS Step Functions, ECS Fargate, and Lambda. Migrated 100+ tables to Apache Iceberg with zero-downtime validation.",
-    impact: [
-      "30% reduction in query latency",
-      "90% reduction in manual operations",
-      "Zero data loss during migration"
-    ],
-    techStack: ["AWS Glue", "Step Functions", "ECS Fargate", "Lambda", "Apache Iceberg", "S3", "Python"],
-    featured: true,
-    links: {
-      github: null,
-      demo: null
-    }
-  },
-  {
-    id: 2,
     name: "LLM-Powered Mobility Research Framework",
     category: "Applied AI Research",
     problem: "Researchers struggled to find relevant interoperability resources across fragmented mobility datasets, relying on inefficient keyword search.",
@@ -125,7 +107,7 @@ export const projects = [
     }
   },
   {
-    id: 3,
+    id: 2,
     name: "DocBot - RAG-Powered Document Search",
     category: "GenAI Application",
     problem: "Manual document lookup across unstructured PDFs was time-consuming and error-prone, lacking context-aware search capabilities.",
@@ -136,7 +118,7 @@ export const projects = [
       "Citation-backed responses"
     ],
     techStack: ["React", "FastAPI", "LlamaIndex", "OpenAI API", "Pinecone", "Python"],
-    featured: false,
+    featured: true,
     links: {
       github: "https://github.com/yourprofile/docbot",
       demo: null
