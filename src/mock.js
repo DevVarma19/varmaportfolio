@@ -149,12 +149,39 @@ export const projects = [
   },
   {
     id: 2,
+    name: "StockSenseAI - AI-Powered Stock Analysis",
+    category: "GenAI Application",
+    problem:
+      "Stock research requires analyzing multiple data sources such as earnings reports, price trends, and news, making the process time-consuming.",
+    solution:
+      "Built an AI-powered stock analysis engine that aggregates financial signals including market prices, earnings data, and news sentiment. Implemented LLM-driven reasoning workflows to generate structured research summaries. The system integrates multiple model providers with retry logic and cost-aware routing to ensure reliable and efficient inference.",
+    impact: [
+      "Reduced manual stock research time by 80%",
+      "Generated structured financial briefs in under 10 seconds",
+      "Achieved 99%+ API reliability through intelligent model routing",
+    ],
+    techStack: [
+      "Python",
+      "OpenAI API",
+      "Gemini API",
+      "Prompt Engineering",
+      "AI Agents",
+      "Financial Data APIs",
+    ],
+    featured: true,
+    links: {
+      github: "https://github.com/DevVarma19/stock_analyzer",
+      demo: "https://stock.mvarma.me/",
+    },
+  },
+  {
+    id: 3,
     name: "DocBot - RAG-Powered Document Search",
     category: "GenAI Application",
     problem:
       "Manual document lookup across unstructured PDFs was time-consuming and error-prone, lacking context-aware search capabilities.",
     solution:
-      "Designed and implemented a retrieval-augmented generation (RAG) chatbot for unstructured document search by ingesting PDFs, generating embeddings, and indexing vectors in Pinecone for semantic retrieval.",
+      "Designed and implemented a retrieval-augmented generation (RAG) chatbot to enable semantic search over unstructured PDF documents. The system ingests documents, generates embeddings, and indexes vectors in Pinecone for efficient and accurate retrieval. This architecture improves response relevance by grounding LLM outputs in source documents.",
     impact: [
       "Reduced manual document lookup time by 70%",
       "Improved answer verifiability and user trust",
@@ -170,7 +197,7 @@ export const projects = [
     ],
     featured: true,
     links: {
-      github: "https://github.com/DevVarma19/docbot",
+      github: "https://github.com/DevVarma19/rag-pdf-bot",
       demo: null,
     },
   },
@@ -228,23 +255,23 @@ export const education = [
 export const events = [
   {
     id: 1,
-    title: "Day one at Amazon",
-    date: "Aug 2025",
-    location: "Tempe, AZ",
-    image: "/events/amazon-day-one.jpeg",
+    title: "Transportation Research Board Annual Meeting 2026",
+    date: "Jan 2026",
+    location: "Washington, DC",
+    image: `${process.env.PUBLIC_URL || ""}/events/trb-poster.png`,
   },
   {
     id: 2,
-    title: "CUTR 2025 Annual Meeting",
-    date: "Oct 2025",
-    location: "Tampa, FL",
-    image: "/events/cutr-2025.JPG",
-  },
-  {
-    id: 3,
     title: "CUTR 2025 Poster Competition",
     date: "Oct 2025",
     location: "Tampa, FL",
-    image: "/events/poster-win.jpg",
+    image: `${process.env.PUBLIC_URL || ""}/events/poster-win.jpg`,
+  },
+  {
+    id: 3,
+    title: "Day one at Amazon",
+    date: "Aug 2025",
+    location: "Tempe, AZ",
+    image: `${process.env.PUBLIC_URL || ""}/events/amazon-day-one.jpeg`,
   },
 ];

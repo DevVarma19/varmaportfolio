@@ -1,16 +1,16 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import { Toaster } from './components/ui/toaster';
+import "./App.css";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Toaster />
     </div>
   );
