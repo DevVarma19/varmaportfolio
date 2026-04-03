@@ -17,7 +17,7 @@ export const personalInfo = {
 
 export const about = {
   description:
-    "I'm a Data Engineer with hands-on experience building production-scale data infrastructure at Amazon and expertise in cloud platforms (AWS, Azure). I focus on solving complex data problems through automation, optimization, and intelligent system design. My work spans ETL pipelines, data mesh architectures, and LLM-powered applications delivering measurable impact through reduced latency, lower costs, and improved data quality.",
+    "I'm a Data & AI Engineer with hands-on experience building production-scale data infrastructure at Amazon and expertise in cloud platforms (AWS, Azure). I focus on solving complex data problems through automation, optimization, and intelligent system design. My work spans ETL pipelines, data mesh architectures, and LLM-powered applications delivering measurable impact through reduced latency, lower costs, and improved data quality.",
 };
 
 export const skills = {
@@ -149,29 +149,33 @@ export const projects = [
   },
   {
     id: 2,
-    name: "StockSenseAI - AI-Powered Stock Analysis",
-    category: "GenAI Application",
+    name: "ResumeAI",
+    category: "Full-Stack Application",
     problem:
-      "Stock research requires analyzing multiple data sources such as earnings reports, price trends, and news, making the process time-consuming.",
+      "Most applications stall in two places: screening tools never forward the resume, or a hiring manager skims it and moves on. People rarely learn which step held them back.",
     solution:
-      "Built an AI-powered stock analysis engine that aggregates financial signals including market prices, earnings data, and news sentiment. Implemented LLM-driven reasoning workflows to generate structured research summaries. The system integrates multiple model providers with retry logic and cost-aware routing to ensure reliable and efficient inference.",
+      "ResumeAI compares your resume to a specific job posting, shows how closely you match, and suggests clearer wording where you fall short—then runs another pass until you are in better shape. You get plain-English feedback on how your story reads to a hiring manager, a polished file you can download and reuse, and a private list of past reviews so you can refine your materials without starting over. Accounts, fair-use limits, and oversight tools make it practical for steady, repeat use.",
     impact: [
-      "Reduced manual stock research time by 80%",
-      "Generated structured financial briefs in under 10 seconds",
-      "Achieved 99%+ API reliability through intelligent model routing",
+      "Match score against the role, with gaps explained in simple terms",
+      "Suggested rewrites and automatic follow-up checks as your fit improves",
+      "Hiring-manager-style feedback, download-ready resume output, saved history",
     ],
     techStack: [
+      "React",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "FastAPI",
       "Python",
       "OpenAI API",
-      "Gemini API",
-      "Prompt Engineering",
-      "AI Agents",
-      "Financial Data APIs",
+      "MongoDB",
+      "Motor",
+      "Google OAuth",
+      "JWT",
     ],
     featured: true,
     links: {
-      github: "https://github.com/DevVarma19/stock_analyzer",
-      demo: "https://stock.mvarma.me/",
+      github: "https://github.com/DevVarma19/resumeai",
+      demo: "https://resume.mvarma.me/",
     },
   },
   {
@@ -199,6 +203,33 @@ export const projects = [
     links: {
       github: "https://github.com/DevVarma19/rag-pdf-bot",
       demo: null,
+    },
+  },
+  {
+    id: 4,
+    name: "StockSenseAI - AI-Powered Stock Analysis",
+    category: "GenAI Application",
+    problem:
+      "Stock research requires analyzing multiple data sources such as earnings reports, price trends, and news, making the process time-consuming.",
+    solution:
+      "Built an AI-powered stock analysis engine that aggregates financial signals including market prices, earnings data, and news sentiment. Implemented LLM-driven reasoning workflows to generate structured research summaries. The system integrates multiple model providers with retry logic and cost-aware routing to ensure reliable and efficient inference.",
+    impact: [
+      "Reduced manual stock research time by 80%",
+      "Generated structured financial briefs in under 10 seconds",
+      "Achieved 99%+ API reliability through intelligent model routing",
+    ],
+    techStack: [
+      "Python",
+      "OpenAI API",
+      "Gemini API",
+      "Prompt Engineering",
+      "AI Agents",
+      "Financial Data APIs",
+    ],
+    featured: true,
+    links: {
+      github: "https://github.com/DevVarma19/stock_analyzer",
+      demo: "https://stock.mvarma.me/",
     },
   },
 ];
